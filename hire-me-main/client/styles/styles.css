@@ -1,0 +1,201 @@
+body {
+  background-color: pink;
+}
+
+
+
+#application-view {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  min-height: 100vh;
+}
+
+#applications-tree {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+#application-preview {
+  flex-grow: 3;
+}
+
+#progress-tracker {
+  flex-grow: 3;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.login-form h1 {
+  font-weight: 1000;
+  font-size: 10em;
+}
+
+.login-form input {
+  text-align: center;
+  padding: 2px;
+  margin: 2px;
+}
+
+.signin-btnbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#signup-btn, #login-btn {
+  margin: 2px;
+  width: 6rem;
+}
+
+#signup {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#app-card {
+  width: 30rem;
+  max-width: 30rem;
+  height: 22rem;
+  max-height: 22rem;
+
+  overflow-y: scroll;
+  margin: 0;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+#cards-view {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.small-cards {
+  border: 0;
+}
+
+#homepage-container {
+  width: 100vw;
+  margin: 0;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#archive-container {
+  width: 100vw;
+  margin: 0;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#todos-view, #notes-view {
+  max-width: 18rem;
+  background-color: transparent;
+}
+
+
+
+.todos-list, .notes-list{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 5px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.todos-list div, .notes-list div {
+  justify-content: center;
+  display: flex;
+}
+
+.todos-list button, .notes-list button {
+  border: 0;
+  margin: 5px;
+}
+
+.pane {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  padding: 20px;
+  padding-top: 40px;
+}
+
+.SplitPane {
+  min-height: 100%;
+  overflow: scroll;
+}
+
+.Resizer {
+  background: #000;
+  opacity: 0.2;
+  z-index: 1;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding;
+  background-clip: padding-box;
+}
+
+.Resizer:hover {
+  -webkit-transition: all 2s ease;
+  transition: all 2s ease;
+}
+
+.Resizer.horizontal {
+  height: 11px;
+  margin: -5px 0;
+  border-top: 5px solid rgba(255, 255, 255, 0);
+  border-bottom: 5px solid rgba(255, 255, 255, 0);
+  cursor: row-resize;
+  width: 100%;
+}
+
+.Resizer.horizontal:hover {
+  border-top: 5px solid rgba(0, 0, 0, 0.5);
+  border-bottom: 5px solid rgba(0, 0, 0, 0.5);
+}
+
+.Resizer.vertical {
+  width: 11px;
+  margin: 0 -5px;
+  border-left: 5px solid rgba(255, 255, 255, 0);
+  border-right: 5px solid rgba(255, 255, 255, 0);
+  cursor: col-resize;
+}
+
+.Resizer.vertical:hover {
+  border-left: 5px solid rgba(0, 0, 0, 0.5);
+  border-right: 5px solid rgba(0, 0, 0, 0.5);
+}
+.Resizer.disabled {
+  cursor: not-allowed;
+}
+.Resizer.disabled:hover {
+  border-color: transparent;
+}
+
+.navbar {
+  margin-bottom: 0;
+}

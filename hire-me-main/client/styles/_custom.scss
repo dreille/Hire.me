@@ -1,0 +1,99 @@
+/* ### CUSTOM STYLES ### */
+
+/* ### OVERALL STYLES ### */
+@import 'application';
+@import 'styles';
+
+body {
+    background-color:  whitesmoke;
+  }
+  
+  li {
+    list-style-type: none;
+  }
+  
+  .nav-bar {
+    display: flex;
+  
+  }
+  
+  .nav-link {
+    margin-right: 10px;
+  }
+
+  #contents-view h5 {
+    font-weight: bold;
+  }
+  
+  /* ### NAVBAR ### */
+  
+  .navbar.navbar-light.bg-light {
+    background-color: rgb(18, 18, 19) !important;
+
+    .navbar-brand {
+      font-size: 24px;
+      font-weight: 600;
+      color: #FFF;
+      border: none;
+      background-color: transparent;
+    }
+  
+    .navbar-nav.ml-auto {
+      margin-left: auto;
+    }
+  
+    .nav-item {
+      font-size: 16px;
+      a {
+        text-decoration: none;
+      }
+      .nav-link {
+        border: none;
+        background-color: transparent;
+        color: white;
+      }
+      .nav-link:hover {
+        color:rgba(252, 7, 7, 0.678)
+      }
+    }
+  }
+  
+  .small-card {
+    border: 0;
+  }
+
+  #todoDelete, #noteDelete {
+    padding: 0;
+  }
+
+  #todos-header, #notes-header {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  /* ### CARDS ### */
+  
+  .app-card.card {
+    padding: 0 0;
+    display: grid;
+    grid-row-gap: 4rem;
+    margin: 2rem;
+    .card-body {
+      .card-subtitle {
+        margin-bottom: 16px;
+      }
+      .card-text {
+        margin-bottom: 20px;
+        font-size: 10px;
+        span {
+          margin-right: 28px;
+        }
+      }
+      .btn-group {
+        margin-top: 28px;
+        a {
+          margin-right: 20px;
+        }
+      }
+    }
+  }
